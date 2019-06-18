@@ -1,0 +1,406 @@
+●ロードオブヴァーミリオンｂ(主人公と一緒のバージョン
+
+・se021ループ
+(※音加工してエネルギーを溜めているループしたものを用意します。(ロックマンのロックバスターみたいな感じです。
+・evA04d表示
+エネルギーを貯めている状態です。
+・CG表示から技名を言う前まではこの状態で
+↓
+●ここからマクロ開始
+・カットイン、技名
+↓
+・se021e
+　evA04A
+↓
+・ロードオブヴァーミリオンB_d
+●マクロ終了
+
+●エアウィーク
+
+通常画面
+↓
+●ここからマクロ開始
+・カットイン
+・技名
+エアウォークA_a_+
+(後ろの通常背景が見えている状態です。)
+↓
+se　風邪が吹き抜ける、迫ってくる感じのものを使用
+中心から外にむけてホワイトアウト　
+●マクロ終了
+↓
+通常背景(弓が消えている
+
+
+
+
+
+こちらも調整してマクロにしてください。
+
+●VSモード
+
+・主人公と弓が入って来る部分は削除してください。
+・主人公の個人戦、スプレット戦の開始でしようします。
+
+;■ＶＳモードテンプレ----------------------------------------------
+[layer name=bo file=bg00_01 opacity=0 level=0]
+[layer name=cinx file=cinx zoom=250 opacity=0 level=0]
+[layer name=cinx2 file=cinx能力発動_a zoom=100 opacity=0 level=0]
+[layer name=sren file=saijoren xpos=-450 ypos=-350 opacity=0 level=1]
+[layer name=vs1 file=VSモードa_ xpos=-1050 ypos=0 zoom=100 opacity=0 level=8]
+[layer name=vs2 file=VSモードb_ xpos=1050 ypos=0 zoom=100 opacity=0 level=8]
+[layer name=vs3 file=VSモードc_ xpos=-50 ypos=0 zoom=100 opacity=0 level=7]
+
+[layer name=vs4 file=VSモードd_ zoomy=150 opacity=0 level=5]
+[layer name=vs5 file=VSモードe_ zoomx=500 opacity=0 level=5]
+[layer name=wo file=bg99_01 opacity=0 level=5]
+;----------------------------------------------
+[bo xpos=0 ypos=0 zoom=100 time=1000 opacity=128 accel=3]
+[cinx xpos=0 ypos=0 zoom=100 time=1000 opacity=255 accel=-3]
+[wact]
+[wact]
+[se play=se047c buf=3]
+[弓 前 右３ 立右 Ｐ１ 制服 普通 time=500 accel=-4]
+[se play=se047a buf=2]
+[sren xpos=-350 ypos=-350 zoom=100 time=500 opacity=255 accel=-4]
+[wact]
+
+[se play=se028f buf=5]
+[se play=se013a buf=1]
+[se play=se013m buf=4]
+[vs1 xpos=0 ypos=0 zoom=100 time=1000 opacity=255 accel=3]
+[vs2 xpos=0 ypos=0 zoom=100 time=1000 opacity=255 accel=3]
+[wact]
+[wact]
+[layer name=vs1x file=VSモードa_ xpos=0 ypos=0 zoom=100 opacity=255 level=8]
+[layer name=vs2x file=VSモードb_ xpos=0 ypos=0 zoom=100 opacity=255 level=8]
+[layer name=vs1xx file=VSモードa_ xpos=0 ypos=0 zoom=100 opacity=255 level=8]
+[layer name=vs2xx file=VSモードb_ xpos=0 ypos=0 zoom=100 opacity=255 level=8]
+[vs1xx xpos=0 ypos=0 zoom=120 time=1000 opacity=0 accel=-3]
+[vs2xx xpos=0 ypos=0 zoom=120 time=1000 opacity=0 accel=-3]
+[se play=se014a buf=0]
+[se play=se016c buf=1]
+[se play=se037e buf=2]
+[se play=se061d buf=3]
+[se play=se064c buf=4]
+
+[quake time=300 hmax=0 vmax=5]
+
+[wo opacity=128 time=100 accel=-3]
+[wact]
+[wo xpos=0 ypos=0 zoom=100 time=500 opacity=0 accel=3]
+[wact]
+[layer name=vs3xx file=VSモードc_ xpos=0 ypos=0 zoom=100 opacity=255 level=7]
+[layer name=vs3x file=VSモードc_ xpos=0 ypos=0 zoom=100 opacity=255 level=7]
+[wact]
+[se play=se028u buf=4]
+[se fade=60 buf=4]
+[vs3x xpos=0 ypos=30 zoom=150 time=1000 opacity=0 accel=-3]
+[vs4 xpos=0 ypos=0 zoom=100 time=1000 opacity=192 accel=-3]
+[vs5 xpos=0 ypos=0 zoom=100 time=1000 opacity=96 accel=-3]
+[wact]
+[wact]
+[wact]
+[wact]
+[se play=se061b buf=2]
+[quake time=300 hmax=5 vmax=5]
+[vs1x xpos=0 ypos=0 zoomx=300 time=1000 opacity=0 accel=-3]
+[vs2x xpos=0 ypos=0 zoomx=300 time=1000 opacity=0 accel=-3]
+[se play=se028n buf=5]
+[cinx2 xpos=0 ypos=0 zoom=100 time=1000 opacity=255 accel=-3]
+
+
+
+
+●ブライトネススクエア
+・キャラカットインをマクロのを使用できるように調整していただきたいです。
+・能力のカットイン部分。腕の素材を戦闘服の「cin_ren3b」版の追加
+
+[se play=se021c buf=5]
+[layer name=card2 file=cin_cw xpos=300 ypos=150 zoom=70 opacity=255 level=9]
+[card2 xpos=300 ypos=150 zoom=85 time=1000 opacity=0 accel=-3 nowait]
+[quake time=500 hmax=3 vmax=3]
+[光 xpos=0 ypos=0 zoom=100 time=100 opacity=196 accel=0]
+[wact layer=光]
+[光 xpos=0 ypos=0 zoom=100 time=100 opacity=0 accel=0]
+[wact layer=光]
+[光 xpos=0 ypos=0 zoom=100 time=100 opacity=128 accel=3]
+[wact layer=光]
+[光 xpos=0 ypos=0 zoom=100 time=300 opacity=0 accel=-3 nowait]
+[wait time=300]
+;左右離脱--------------------------------------
+[layer name=sasi file=ky1_03j opacity=255 level=6]
+[cin delete]
+[cin_ delete]
+[card delete]
+[chara delete]
+[card2 delete]
+
+;[chara xpos=1000 ypos=150 zoom=70 time=300 opacity=0 accel=3 nowait]
+;[card xpos=-1000 ypos=150 zoom=70 time=300 opacity=0 accel=3 nowait]
+;[wait time=300]
+;[wact layer=chara]
+;[wact layer=card]
+;;縮小------------------------------------------
+;[灰 xpos=0 ypos=0 zoom=100 time=500 opacity=0 accel=3]
+;[cin_ xpos=0 ypos=150 zoomy=1 time=200 opacity=0 accel=-3]
+;[cin xpos=0 ypos=150 zoomy=1 time=200 opacity=255 accel=-3]
+;[wait time=200]
+;[cin xpos=0 ypos=150 zoomy=1 time=1000 opacity=0 accel=-3 nowait]
+;;----------------------------------------------
+
+;◆光の四方形テンプレ------------------------------
+;レイヤー５～９に配置----------------------------------------------
+[layer name=cin file=cin_ren3e xpos=0 ypos=50 zoom=50 opacity=0 level=7]
+[layer name=cin_ file=cin_ren3d xpos=3000 ypos=50 zoom=50 opacity=255 level=8]
+[layer name=card file=cin_ren3c xpos=100 ypos=50 zoom=0 opacity=0 level=9]
+[layer name=chara file=cin_ren3a xpos=100 ypos=50 zoom=50 opacity=0 level=8]
+;起動------------------------------
+[se play=se013g buf=1]
+[se play=se028f buf=4]
+[灰 xpos=0 ypos=0 zoom=100 time=500 opacity=128 accel=0]
+[sasi xpos=0 ypos=0 zoom=100 time=1000 opacity=0 accel=-3 nowait]
+
+[begintrans]
+[cin xpos=0 ypos=50 zoom=50 opacity=255]
+[endtrans 汎用 rule=idou_lx time=300 vague=200 nowait]
+[chara xpos=0 ypos=50 zoom=50 time=500 opacity=255 accel=-3]
+[cin_ xpos=50 ypos=50 zoom=50 time=500 opacity=255 accel=3]
+[wait time=500]
+[wact layer=as]
+[wact layer=cin_]
+[chara xpos=0 ypos=50 zoom=50 time=10000 opacity=255 accel=-3 nowait]
+[cin_ xpos=0 ypos=50 zoom=50 time=10000 opacity=255 accel=-3 nowait]
+[wait time=500]
+[card xpos=0 ypos=50 zoom=50 time=500 opacity=255 accel=-3 nowait]
+[se play=se028b buf=1]
+[wact layer=card]
+[wact layer=cin]
+;----------------------------------------------
+
+【蓮】
+「[ruby text="ブライトネス・スクェア"][ch text=光の四方形][―――]！！」
+
+;◆カットイン閉じ------------------------------
+[se play=se028d buf=3]
+[layer name=card2 file=cin_ren3c xpos=0 ypos=50 zoom=50 opacity=255 level=8]
+[card2 xpos=0 ypos=50 zoom=70 time=1000 opacity=0 accel=-3 nowait]
+[quake time=500 hmax=3 vmax=3]
+[光 xpos=0 ypos=0 zoom=100 time=100 opacity=196 accel=0]
+[wact layer=光]
+[光 xpos=0 ypos=0 zoom=100 time=100 opacity=0 accel=0]
+[wact layer=光]
+[光 xpos=0 ypos=0 zoom=100 time=100 opacity=128 accel=3]
+[wact layer=光]
+[光 xpos=0 ypos=0 zoom=100 time=300 opacity=0 accel=-3 nowait]
+[wait time=100]
+;左右離脱--------------------------------------
+[chara xpos=50 ypos=50 zoom=50 time=1000 opacity=0 accel=2 nowait]
+[card xpos=50 ypos=50 zoom=50 time=1000 opacity=0 accel=2 nowait]
+[wait time=1000]
+[wact layer=chara]
+[wact layer=card]
+;縮小------------------------------------------
+[灰 xpos=0 ypos=0 zoom=100 time=500 opacity=0 accel=3]
+[cin_ xpos=0 ypos=50 zoomy=1 time=200 opacity=0 accel=-3]
+[cin xpos=0 ypos=50 zoomy=1 time=200 opacity=255 accel=-3]
+[wait time=200]
+[cin xpos=0 ypos=50 zoomy=1 time=1000 opacity=0 accel=-3 nowait]
+;----------------------------------------------
+
+●ラプラス(演算)
+
+蓮の演算処理をしているシーンです。
+
+これの意識断絶～断絶までのものを修正してもらいたいです。
+ワンクリックで次のシーンにいけるようにしたいです。
+
+[begintrans]
+[白]
+[wo opacity=0 time=100]
+[ea delete]
+[eb delete]
+[ec delete]
+[ed delete]
+[ee delete]
+[ef delete]
+[eg delete]
+[eh delete]
+[ei delete]
+[ej delete]
+[ek delete]
+[el delete]
+[em delete]
+[en delete]
+[endtrans 汎用 rule=baku time=100 vague=50]
+
+[se play=se037j buf=0]
+[wait time=500]
+[quake time=300 hmax=5 vmax=5]
+[li xpos=0 ypos=0 zoom=100 opacity=255 time=100]
+
+[msgon time=300]
+俺はただただ、解答を探して、そこへと手を伸ばす。
+
+自分自身の限界すら超えたその向こうへ[―――]！
+
+
+[li xpos=0 ypos=0 zoom=500 opacity=255 time=1500 accel=0]
+[begintrans]
+[白]
+[li delete]
+[endtrans 汎用 rule=baku time=1500 vague=50]
+
+そして俺は[―――]『運命』にたどり着く。
+
+[layer name=wo file=bg99_01 time=0 opacity=255 level=5]
+[裏庭 昼 opacity=0 zoom=100]
+
+[se play=se037h buf=1]
+[裏庭 昼 time=500 zoom=120 opacity=255 accel=-3 nosync]
+[begintrans]
+[wo delete]
+[endtrans 汎用 rule=baku time=500 vague=300]
+
+見えた[―――]。
+
+可能性はまだ残っている！
+
+本棚の空、それは現状を把握し、僅かな未来を計算しうる力。
+
+現状を打破することにおいて、最も適した解答[―――]。
+
+この頭が割れそうな痛みと代償に、俺は“最適解”を手に入れた！
+
+[layer name=layer0 file=blackframe_x ypos=584   level=5 show]
+[layer name=layer1 file=blackframe_x ypos=-584  level=5 show]
+[layer0 ypos=454 time=500 accel=-3 nowait]
+[layer1 ypos=-454 time=500 accel=-3 nowait]
+[明日葉 手前 中 立左 Ｐ１ 制服 驚く２ time=500 accel=-4]
+[明日葉 ガクガク time=300]
+[明日葉 voice="KY_As_0417_016"]
+【明日葉】
+「な！　あなたは[―――]！？」
+
+彼女がなにかを叫んでいた。
+
+だが今の俺には説明をしている余裕はない。
+
+ここで彼女を助けられる方法はただ一つ。
+
+[layer name=do file=ky1_03f zoom=50 opacity=0 level=4]
+[do xpos=0 ypos=0 zoom=40 time=1000 opacity=255 accel=-3 nowait]
+
+俺は掴んでいる彼女の手を引き、
+その場に伏せさせる。
+
+そして、自ら彼女の前にスライディングさながら
+身をすべらせ[―――]。
+
+そうして爆発するドラム缶を受け止めるために、
+彼女の前に立ちはだかるのみ！
+
+[do xpos=0 ypos=0 zoom=40 time=1000 opacity=0 accel=-3 nowait]
+
+[layer name=syu file=集中線a_ opacity=0 level=4]
+[syu xpos=0 ypos=0 zoom=100 time=500 opacity=255 accel=-3 nowait]
+[se play=se047b buf=1]
+
+[明日葉 Ｐ１ 普通 怒り１]
+[明日葉 voice="KY_As_0417_017"]
+【明日葉】
+「危な[―――]」
+
+[se play=se012a buf=3]
+[明日葉 xpos=300 ypos=-150 zoom=100 time=1000 opacity=0 accel=-3 nowait]
+[wait time=1000]
+
+[layer0 ypos=304 time=500 accel=-3]
+[layer1 ypos=-304 time=500 accel=-3]
+
+俺は彼女の腕を引いて後ろへ[―――]。
+
+爆発３秒前。
+
+
+[layer0 ypos=234 time=500 accel=-3]
+[layer1 ypos=-234 time=500 accel=-3]
+３。
+
+[layer0 ypos=204 time=500 accel=-3]
+[layer1 ypos=-204 time=500 accel=-3]
+２。
+
+[layer0 ypos=180 time=500 accel=-3]
+[layer1 ypos=-180 time=500 accel=-3]
+１。
+
+
+そして[―――]。
+
+どうしてそうしたかは分からない。
+
+俺は背後のドラム缶に右手をかざし、ただ最適解の導きのまま、
+宙に四方形を描いた。
+
+[begintrans]
+[明日葉 delete]
+[黒]
+[layer1 delete]
+[layer0 delete]
+[syu delete]
+[endtrans 汎用 rule=blind_r1 time=0 vague=100]
+
+[se play=se013i buf=3]
+[se play=se054a buf=4]
+[layer name=bli file=ブライトネスB_a_ opacity=255 level=6]
+[白 汎用 rule=spin time=1000 vague=10]
+[wait time=100]
+[se play=se020c buf=1]
+[se play=se053c buf=2]
+[se play=se028a buf=0]
+[bli xpos=0 ypos=0 zoom=150 time=300 opacity=0 accel=-3 nowait]
+[wait time=500]
+
+[layer name=wo file=bg99_01 opacity=255 level=4]
+[begintrans]
+[bli delete]
+[裏庭]
+[endtrans 汎用 rule=blind_r1 zoom=100 time=0 vague=100 nowait]
+[wo xpos=0 ypos=0 zoom=100 time=1000 opacity=0 accel=3 nowait]
+
+宙に浮かびあがる光の線。
+
+俺たちの前に“光の四方形”が完成した！
+
+;◆カットイン開始------------------------------
+;レイヤー５～９に配置----------------------------------------------
+[layer name=灰 file=bg00_01 opacity=0 level=5]
+[layer name=光 file=bg99_01 opacity=0 level=6]
+[layer name=cin file=cinI_a_ xpos=0 ypos=150 zoom=70 opacity=0 level=7]
+[layer name=cin_ file=cinI_b_ xpos=-3000 ypos=150 zoom=70 opacity=255 level=8]
+[layer name=card file=cin_cw xpos=300 ypos=150 zoomy=70 opacity=0 level=9]
+[layer name=chara file=cin_ren1 xpos=1500 ypos=150 zoom=70 opacity=0 level=9]
+;起動------------------------------
+[se play=se013j buf=3]
+[灰 xpos=0 ypos=0 zoom=100 time=500 opacity=128 accel=0]
+
+[card xpos=300 ypos=150 zoom=70 time=1500 opacity=255 accel=3 nowait]
+[cin xpos=0 ypos=150 zoom=70 time=1000 opacity=255 accel=3 nowait]
+
+[chara xpos=-225 ypos=150 zoom=70 time=500 opacity=255 accel=3]
+[cin_ xpos=-250 ypos=150 zoom=70 time=500 opacity=255 accel=3]
+[wait time=500]
+[wact layer=chara]
+[wact layer=cin_]
+[chara xpos=-300 ypos=150 zoom=70 time=10000 opacity=255 accel=-3 nowait]
+[cin_ xpos=-175 ypos=150 zoom=70 time=10000 opacity=255 accel=-3 nowait]
+[wait time=500]
+[wact layer=card]
+[wact layer=cin]
+;----------------------------------------------
+
+
+●VSモード
+
+

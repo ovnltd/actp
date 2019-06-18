@@ -1,0 +1,63 @@
+*icochk
+;■ICOチェック
+;----------------------------------------------
+;wait原点設定
+[eval exp="tf.collectionflags  = true"]
+
+[if exp="sf.ico_妹からの手紙 == false"][eval exp="tf.collectionflags  = false"][endif]
+[if exp="sf.ico_アーケン・カード == false"][eval exp="tf.collectionflags  = false"][endif]
+[if exp="sf.ico_マジック＆トレイ == false"][eval exp="tf.collectionflags  = false"][endif]
+[if exp="sf.ico_新歓会ＷＥＥＫのチラシ == false"][eval exp="tf.collectionflags  = false"][endif]
+[if exp="sf.ico_"蝶のヘアピン Lv7" == false"][eval exp="tf.collectionflags  = false"][endif]
+[if exp="sf.ico_サンマ・レインボー == false"][eval exp="tf.collectionflags  = false"][endif]
+[if exp="sf.ico_数学の教科書 == false"][eval exp="tf.collectionflags  = false"][endif]
+[if exp="sf.ico_トランプクッキー == false"][eval exp="tf.collectionflags  = false"][endif]
+[if exp="sf.ico_三園さんのペンダント == false"][eval exp="tf.collectionflags  = false"][endif]
+[if exp="sf.ico_"時のスケープシェル Lv9" == false"][eval exp="tf.collectionflags  = false"][endif]
+[if exp="sf.ico_ＳＰフラッグ == false"][eval exp="tf.collectionflags  = false"][endif]
+[if exp="sf.ico_クエストオーダー == false"][eval exp="tf.collectionflags  = false"][endif]
+[if exp="sf.ico_ペンシルの替芯 == false"][eval exp="tf.collectionflags  = false"][endif]
+[if exp="sf.ico_飲茶セット == false"][eval exp="tf.collectionflags  = false"][endif]
+[if exp="sf.ico_黒のカード == false"][eval exp="tf.collectionflags  = false"][endif]
+[if exp="sf.ico_かりんの手料理 == false"][eval exp="tf.collectionflags  = false"][endif]
+[if exp="sf.ico_グラビア誌 == false"][eval exp="tf.collectionflags  = false"][endif]
+[if exp="sf.ico_黒うさぽのぬいぐるみ == false"][eval exp="tf.collectionflags  = false"][endif]
+[if exp="sf.ico_シークレットデータ == false"][eval exp="tf.collectionflags  = false"][endif]
+[if exp="sf.ico_コーヒー豆腐 == false"][eval exp="tf.collectionflags  = false"][endif]
+[if exp="sf.ico_ぽてぽてした猫 == false"][eval exp="tf.collectionflags  = false"][endif]
+[if exp="sf.ico_リブロ・グロウリア == false"][eval exp="tf.collectionflags  = false"][endif]
+[if exp="sf.ico_弓のストラップ == false"][eval exp="tf.collectionflags  = false"][endif]
+[if exp="sf.ico_虹 == false"][eval exp="tf.collectionflags  = false"][endif]
+[if exp="sf.ico_さくもとさん == false"][eval exp="tf.collectionflags  = false"][endif]
+[if exp="sf.ico_思い出のアトリエ == false"][eval exp="tf.collectionflags  = false"][endif]
+[if exp="sf.ico_椎名の手紙 == false"][eval exp="tf.collectionflags  = false"][endif]
+[if exp="sf.ico_悠久桜雲多次元論 == false"][eval exp="tf.collectionflags  = false"][endif]
+[if exp="sf.ico_思い出の小箱 == false"][eval exp="tf.collectionflags  = false"][endif]
+[if exp="sf.ico_才城鷹途の日記 == false"][eval exp="tf.collectionflags  = false"][endif]
+[if exp="sf.ico_かりんの彫金具 == false"][eval exp="tf.collectionflags  = false"][endif]
+[if exp="sf.ico_マイクロSD == false"][eval exp="tf.collectionflags  = false"][endif]
+[if exp="sf.ico_悠久のリング == false"][eval exp="tf.collectionflags  = false"][endif]
+[if exp="sf.ico_"Wheel of Fotune" == false"][eval exp="tf.collectionflags  = false"][endif]
+[if exp="sf.ico_悠久のリング == false"][eval exp="tf.collectionflags  = false"][endif]
+[if exp="sf.ico_明日葉のアーケン == false"][eval exp="tf.collectionflags  = false"][endif]
+[if exp="sf.ico_月詠のアーケン == false"][eval exp="tf.collectionflags  = false"][endif]
+[if exp="sf.ico_椎名のアーケン == false"][eval exp="tf.collectionflags  = false"][endif]
+[if exp="sf.ico_かりんのアーケン == false"][eval exp="tf.collectionflags  = false"][endif]
+[if exp="sf.ico_弓のアーケン == false"][eval exp="tf.collectionflags  = false"][endif]
+
+
+[if exp="tf.collectionflags == true"]
+	[layer name=mg35 file=MG35 xpos=150 zoom=80 opacity=0 level=6]
+	[mg35 xpos=0 zoom=80 opacity=255 time=2000 accel=-3][wact]
+
+	[se play=se007h buf=1]
+	[icoget name="Congratulations!"]
+	[wait time=3500]
+
+	[mg35 xpos=-150 ypos=0 zoom=80 opacity=0 time=2000 opacity=0 accel=3][wact]
+	[endif]
+
+[mg35 delete]
+[wait time=2000]
+;-------------------------------------------------------------------------------
+[return]

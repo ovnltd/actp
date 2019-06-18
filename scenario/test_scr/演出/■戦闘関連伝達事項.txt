@@ -1,0 +1,129 @@
+■戦闘関連伝達事項
+
+
+●ラプラスに関して
+
+・こちらなんですが、「明日葉との出会い」の表現をそのままマクロにしたかった感じです。
+一応流れはこうなっていたと思います。
+
+
+●意識断絶
+↓
+●ラプラス表示(後ろの数式が動いている
+・主人公思考開始
+↓
+・クリックで次のセリフへ
+↓
+・思考終了時に意識断絶
+
+これのラプラスの部分をマクロにして、他の思考開始するシーン、演算能力を使うシーンで背景に表示したかった感じです。
+ただ、疑問点としてクリックしてセリフを進めた場合、後ろの数式が動くスクリプトも全てとばしてしまうのでは？
+というのがあったので、一度保留にさせて頂きました。
+
+『付属オプションのノーウェイト？』をつければ大丈夫と聞いたのですが、こちら可能でしょうか？
+
+一応ループ動作はできないときいていますので、後ろの数式の動きが終わったそのまま思考終了時まで背景として表示させて、次のシーンになるときに意識断絶などをできればと考えていた次第です。
+
+
+
+
+●ＶＳモード、カットインの扱いに関して
+
+・こちらなんですが、主人公サイドの人間(アス研の面子や、月詠ルートなら月詠など)は左側に、
+その他の敵に関しては右表示でお願いします。
+
+同様に、カットインの扱いも
+・主人公達　→　左から入るカットイン
+・その他の敵→　右から入るカットイン
+
+で統一して下さい。
+
+それと、バトル終了時に
+
+winかloseの表示のこちらを入れてください。(セリフ部分は抜いて下さい。)
+※loseは恐らく明日葉ルートのみで使用すると思います。
+
+;■ＶＳモード勝ちテンプレ----------------------------------------------
+[layer name=bo file=bg00_01 opacity=0 level=0]
+[layer name=ls file=win_a_ opacity=0 level=6]
+[layer name=ls2 file=win_a_ opacity=0 level=6]
+[layer name=vs4 file=win_b_ zoomy=150 opacity=0 level=5]
+[layer name=vs5 win_c_ zoomx=500 opacity=0 level=5]
+[layer name=wo file=bg99_01 opacity=0 level=5]
+;----------------------------------------------
+[se play=se013b buf=3]
+[ls xpos=0 ypos=0 zoom=100 time=1000 opacity=255 accel=-3]
+[vs4 xpos=0 ypos=0 zoom=100 time=1000 opacity=192 accel=-3]
+[vs5 xpos=0 ypos=0 zoom=100 time=1000 opacity=96 accel=-3]
+[wact]
+[wact]
+[wact]
+[ls2 xpos=0 ypos=0 zoomx=150:100 time=1000 opacity=0:255 accel=-3 nowait]
+[vs3x xpos=0 ypos=30 zoom=150 time=1000 opacity=0 accel=-3]
+[se play=se061b buf=2]
+[quake time=300 hmax=5 vmax=5]
+[se play=se028o buf=5]
+
+[女性Ｅ voice="KY_Mo20_0420_024"]
+【女性Ｅ/インフォメーション】
+『THE GAME IS OVER…RETIRE!　－ SAIJO REN －』
+
+[se play=se051e buf=1]
+;----------------------------------------------
+[vs4 xpos=0 ypos=0 zoom=100 time=1000 opacity=0 accel=-3]
+[vs5 xpos=0 ypos=0 zoom=100 time=1000 opacity=0 accel=-3]
+[ls xpos=0 ypos=0 zoom=100 time=1000 opacity=0 accel=-3]
+[bo xpos=0 ypos=0 zoom=100 time=1000 opacity=0 accel=-3]
+[wact]
+[wact]
+[wact]
+[wact]
+[vs4 delete]
+[vs5 delete]
+[ls delete]
+;----------------------------------------------
+
+;■ＶＳモード負けテンプレ----------------------------------------------
+[layer name=bo file=bg00_01 opacity=0 level=0]
+[layer name=ls file=lose_a_ opacity=0 level=6]
+[layer name=ls2 file=lose_a_ opacity=0 level=6]
+[layer name=vs4 file=lose_b_ zoomy=150 opacity=0 level=5]
+[layer name=vs5 file=lose_c_ zoomx=500 opacity=0 level=5]
+[layer name=wo file=bg99_01 opacity=0 level=5]
+;----------------------------------------------
+[se play=se013b buf=3]
+[ls xpos=0 ypos=0 zoom=100 time=1000 opacity=255 accel=-3]
+[vs4 xpos=0 ypos=0 zoom=100 time=1000 opacity=192 accel=-3]
+[vs5 xpos=0 ypos=0 zoom=100 time=1000 opacity=96 accel=-3]
+[wact]
+[wact]
+[wact]
+[ls2 xpos=0 ypos=0 zoomx=150:100 time=1000 opacity=0:255 accel=-3 nowait]
+[vs3x xpos=0 ypos=30 zoom=150 time=1000 opacity=0 accel=-3]
+[se play=se061b buf=2]
+[quake time=300 hmax=5 vmax=5]
+[se play=se028o buf=5]
+
+[女性Ｅ voice="KY_Mo20_0420_024"]
+【女性Ｅ/インフォメーション】
+『THE GAME IS OVER…RETIRE!　－ SAIJO REN －』
+
+[se play=se051e buf=1]
+;----------------------------------------------
+[vs4 xpos=0 ypos=0 zoom=100 time=1000 opacity=0 accel=-3]
+[vs5 xpos=0 ypos=0 zoom=100 time=1000 opacity=0 accel=-3]
+[ls xpos=0 ypos=0 zoom=100 time=1000 opacity=0 accel=-3]
+[bo xpos=0 ypos=0 zoom=100 time=1000 opacity=0 accel=-3]
+[wact]
+[wact]
+[wact]
+[wact]
+[vs4 delete]
+[vs5 delete]
+[ls delete]
+;----------------------------------------------
+
+●バトルのＳＥにかんして
+
+・足りないＳＥがあった場合なんですが、こちらで探して見ますので、
+『ルールリスト→効果音タブ』の一番下に必要なＳＥについての書き込みをお願いします。

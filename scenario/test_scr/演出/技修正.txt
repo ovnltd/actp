@@ -1,0 +1,83 @@
+・ロードオブヴァーミリオンa
+赤フラッシュなしでおねがいします。
+着弾の瞬間が必要な場合は「爆発中a」をいれてください。
+
+・バタフライナイフ
+赤フラッシュなし。フラッシュ使用する場合は白でお願いします。
+右上から左下に流れるナイフをもっと早く、スピード感のある表現が出来ればと思います。
+
+・雪月花
+こちらは体験版部分のものがあったので、これを調整する形でお願いします。
+(カットインの挿入、挿入するCGに関しては「能力テンプレートを参照してください。)
+※なお、体験版だと氷の壁がでてきますが、発動後はバリエーションがあるらしいので、マクロの終わりはこのままでお願いします。
+
+[se play=se004d buf=5]
+[se fade=40 buf=5]
+[se play=se038a buf=2]
+[layer name=ev1 file=evT02b   level=5 hide]
+[layer name=ev2 file=evT02e   level=5 hide]
+[layer name=ev3 file=evT02f   level=5 hide]
+[layer name=ev4 file=evT02g   level=5 hide]
+[layer name=ev5 file=evT02h   level=5 hide]
+[layer name=雪月花 file=雪月花a_   level=6 hide]
+
+[evT02a]
+[集中線 stopaction]
+[集中線 delete]
+[wo3 xpos=0 ypos=0 zoom=100 time=500 opacity=0 accel=3]
+
+[se play=se028c buf=1]
+[begintrans]
+[ev1 show]
+[ev2 show]
+[stage zoom=100]
+[endtrans trans=crossfade time=1000 accel=-1]
+[月詠 voice="KY_tu_0419_080"]
+
+
+[begintrans]
+[ev2 hide]
+[ev4 show]
+[endtrans trans=crossfade time=1000 accel=-1]
+[月詠 Ｐ２ 通常 怒り１]
+[月詠 voice="KY_tu_0419_081"]
+【月詠】
+「[―――][ruby text="せつ げっ か"][ch text=雪月花]！」
+[se play=se028a buf=1]
+[se play=se028f buf=5]
+[se play=se064b buf=2]
+
+[se play=se028c buf=3]
+[layer name=blo file=bg97_01 opacity=0 level=9]
+[layer name=wo file=bg99_01 opacity=196 level=9]
+[wait time=100]
+[wo xpos=0 ypos=0 zoom=100 time=196 opacity=0 accel=-3]
+[wact]
+[blo opacity=128 time=100 accel=-3]
+[wact]
+[blo xpos=0 ypos=0 zoom=100 time=500 opacity=0 accel=3]
+[wact]
+
+[begintrans]
+[ev hide]
+[ev1 hide]
+[ev4 hide]
+[雪月花 opacity=128 show]
+[月詠 消]
+[endtrans trans=crossfade time=1000 accel=-1]
+
+・スプライトストーム
+集中線の使用を変更、「エアウォーク」のホワイトアウトを使用からの「跳弾a」にして下さい。
+なお、スピード感がでるよう、ホワイトアウト調整をお願いします。
+SEを059系を連続再生してボールを投げている音にしたいので、フラッシュの着弾表現をなしに
+
+・エンペラーボルト
+赤フラッシュを白にしてください。
+
+・ファイヤーフィスト
+拳撃部分はちょっとわかりにくいのでなしに変更
+最後の炎ですが、一瞬だけ燃え上がる表現にしたいです。
+(無理そうなら最後の炎はなしで
+
+
+
